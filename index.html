@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TripCanvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">tripcanvas<span>●</span></a>
+      <div class="members"><i>AM</i><i>LK</i><button>+ Invite</button></div>
+      <button class="share">Share trip ↗</button>
+    </header>
+    <main>
+      <aside>
+        <p class="eyebrow">OCT 18–23 · 2 TRAVELLERS</p>
+        <h1>Lisbon,<br />slowly.</h1>
+        <div class="tabs">
+          <button class="active">Itinerary</button><button>Places</button
+          ><button>Budget</button>
+        </div>
+        <section id="days">
+          <button class="day active">
+            <b>FRI</b><span>18</span><small>Arrival · 2 plans</small></button
+          ><button class="day">
+            <b>SAT</b><span>19</span><small>Alfama · 4 plans</small></button
+          ><button class="day">
+            <b>SUN</b><span>20</span><small>Belém · 3 plans</small></button
+          ><button class="day">
+            <b>MON</b><span>21</span><small>Free day</small>
+          </button>
+        </section>
+        <div class="budget">
+          <p>TRIP BUDGET</p>
+          <strong>€612 <small>of €900</small></strong>
+          <div><i></i></div>
+        </div>
+      </aside>
+      <section class="canvas">
+        <div class="map" aria-label="Stylised map of Lisbon">
+          <span class="water">RIO TEJO</span><span class="road r1"></span
+          ><span class="road r2"></span><span class="pin p1">✦<b>Hotel</b></span
+          ><span class="pin p2">✦<b>Pastéis</b></span
+          ><span class="pin p3">✦<b>Viewpoint</b></span>
+        </div>
+        <div class="plan">
+          <div class="plan-title">
+            <p class="eyebrow">FRIDAY · 18 OCTOBER</p>
+            <h2>Arrive, then wander.</h2>
+            <button id="add">+ Add plan</button>
+          </div>
+          <article>
+            <time>14:30</time>
+            <div class="icon orange">⌂</div>
+            <div>
+              <b>Check into The Lumiares</b
+              ><span>Rua do Diário de Notícias · 25 min walk</span>
+            </div>
+            <button class="more">···</button>
+          </article>
+          <article>
+            <time>17:30</time>
+            <div class="icon yellow">☼</div>
+            <div>
+              <b>Sunset at Miradouro da Senhora</b><span>Saved by Aravind</span>
+            </div>
+            <button class="more">···</button>
+          </article>
+          <article>
+            <time>20:00</time>
+            <div class="icon blue">⌁</div>
+            <div>
+              <b>Small plates at Taberna Sal Grosso</b
+              ><span>Reservation for 2 · €€</span>
+            </div>
+            <button class="more">···</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <template id="new"
+      ><article>
+        <time>21:30</time>
+        <div class="icon purple">♡</div>
+        <div><b>New shared plan</b><span>Added just now</span></div>
+        <button class="more">···</button>
+      </article></template
+    >
+    <script src="script.js"></script>
+  </body>
+</html>
